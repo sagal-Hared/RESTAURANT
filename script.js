@@ -1,5 +1,6 @@
 let bars = document.getElementById("bars");
 let navRight = document.getElementById("nav-right");
+let product =document.getElementById("product")
 // let welcome = document.getElementById("welcome");
 // let ourCustomer=document.getElementById("our-customer")
 bars.addEventListener('click', () => {
@@ -14,3 +15,6 @@ bars.addEventListener('click', () => {
 // ourCustomer.addEventListener("click", () =>{
 //     ourCustomer.style.background='red'
 // } )
+// product.addEventListener("click", ()=>{
+//     product.style.display='none'
+// })

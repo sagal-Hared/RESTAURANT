@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.icons i{
+.icons i {
     margin-left: 20px;
 }
 
@@ -319,60 +319,75 @@ footer div p a {
 .our-customer h1 {
     font-size: 40px;
     align-items: center;
- text-align: center;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
+
 .our-customer p {
     text-align: center;
     align-items: center;
     justify-content: center;
 }
-.our-customer .customers{
+
+.our-customer .customers {
     display: flex;
 }
-.our-customer .customers{
+
+.our-customer .customers {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
     width: 600px;
 }
-.our-customer .customers div{
+
+.our-customer .customers div {
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
     flex-direction: column;
     gap: 30px;
 }
-.our-customer .customers div img{
-   width: 76px;
+
+.our-customer .customers div img {
+    width: 76px;
 }
-.togglenav{
+
+.togglenav {
     display: none !important;
 }
-.fa-bars{
+
+.fa-bars {
     display: none;
 }
+
 /* media queris */
-@media(max-width:930px){
-    .fa-bars{
+@media(max-width:930px) {
+    .fa-bars {
         display: block !important;
         cursor: pointer !important;
         font-size: 24px;
         font-weight: bold;
     }
-    .welcome{
+
+    .welcome {
         flex-direction: column;
     }
-    .our-chef, .customers, footer, .about{
+
+    .our-chef,
+    .customers,
+    footer,
+    .about {
         flex-direction: column;
         width: 100%;
     }
-    nav{
+
+    nav {
         justify-content: space-between;
     }
-    .nav-right{
+
+    .nav-right {
         background: red;
         flex-direction: column;
         gap: 30px;
@@ -381,77 +396,145 @@ footer div p a {
         top: 50px;
         width: 200px;
     }
-    .nav-right ul{
-        flex-direction: column;
-    }
-    .nav-right .contact-nav{
-        flex-direction: column;
-    }
-} 
-/* media queris */
-@media(max-width:900px){
-    .salad .row{
-        display: flex;
-    align-items: center;
-    flex-direction: column;
-   
-   
 
+    .nav-right ul {
+        flex-direction: column;
     }
-    .salad .row .col{
-       width: 100%;
+
+    .nav-right .contact-nav {
+        flex-direction: column;
     }
 }
-@media(max-width:770px){
-    .hero{
+
+/* media queris */
+@media(max-width:900px) {
+    .salad .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+
+    }
+
+    .salad .row .col {
+        width: 100%;
+    }
+}
+
+@media(max-width:770px) {
+    .hero {
         flex-direction: column;
     }
-    .hero img{
+
+    .hero img {
         width: 300px;
         height: 300px;
     }
 }
+
 /* about */
-.about{
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
     height: 90vh;
 }
-.about div{
+
+.about div {
     width: 400px;
 }
-.about div img{
+
+.about div img {
     width: 300px;
 }
-.about p{
+
+.about p {
     margin-top: 30px;
-    font-size:20px;
+    font-size: 20px;
 }
+
 /* recipe */
- .recipe {
+.recipe {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     height: 70vh;
- }
- .product-text{
+}
+
+.product-text {
     display: flex;
     align-items: center;
     justify-content: space-around;
- }
+}
 
 
- .product-text h4{
+.product-text h4 {
     color: red;
     font-size: 30px;
 
- }
+}
 
- .product-text a{
+.product-text a {
     text-decoration: none;
     text-transform: uppercase;
     color: rebeccapurple;
- }
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: right;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: 4s;
+    background: white;
+    padding: 20px;
+
+}
+
+.content.hover {
+    box-shadow: 28px rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25);
+    transform: translate(8px);
+}
+
+img {
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+
+h6 {
+    font-size: 27px;
+    text-align: center;
+    color: aquamarine;
+}
+@media(max-width:900px){
+    .product{
+        flex-direction: column !important;
+    }
+    .product .content{
+        width: 100%;
+    }
+}
